@@ -524,8 +524,8 @@
         name: prop,
         label: label,
         type: type,
-        sortable: true,
-        filterable: true,
+        sortable: this.sortable,
+        filterable: this.filterable,
         editable: false,
         required: false,
         selectAll: isSelectAll,
@@ -541,8 +541,8 @@
         name: prop,
         label: label,
         type: type,
-        sortable: true,
-        filterable: true,
+        sortable: this.sortable,
+        filterable: this.filterable,
         editable: false,
         required: false,
         selectAll: isSelectAll,
@@ -700,7 +700,7 @@
           this.set('descending', false); // always start ascending when click new column
         }
       }
-      this._filterSortAndUpdateDisplayedTable();
+        this._filterSortAndUpdateDisplayedTable();
     },
 
     _sortByColumn: function(rowsToSort) {
